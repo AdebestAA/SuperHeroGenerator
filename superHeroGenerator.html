@@ -1,0 +1,71 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="superHeroGenerator.js"></script>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 3px;
+        box-sizing: border-box;
+    }
+
+    button:hover {
+        opacity: 0.8;
+    }
+
+    input {
+        padding: 8px;
+        border-radius: 5px;
+        font-size: 1.1rem;
+
+    }
+
+    ::placeholder {
+        color: rgb(110, 104, 104);
+        font-size: 1.1rem;
+    }
+
+    button {
+        border: none;
+        background-color: red;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    [guide] {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    [guide] span {
+        background-color: green;
+        color: white;
+        border-radius: 5px;
+        padding: 5px;
+        border: 2px solid black;
+    }
+</style>
+
+<body>
+
+
+    <div guide>Enter your text nto the input field and click on the <span>search</span> button to get your favourite
+        heroes
+        <span>or</span> use the the <span>getRandom Hero</span> btn to generate random heroes profile
+    </div>
+    <input type="text" placeholder="HeroName">
+    <button searchBtn>search</button>
+
+    <button randomBtn style="margin-bottom: 20px;">getRandom Hero</button>
+
+    <div container>
+    </div>
+
+</body>
+
+</html>
